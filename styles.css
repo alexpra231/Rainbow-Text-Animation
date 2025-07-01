@@ -1,0 +1,89 @@
+/* Rainbow animation keyframes */
+@keyframes rainbowScroll {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Shared rainbow gradient */
+.rainbow-gradient {
+  background: linear-gradient(
+    90deg,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet,
+    red
+  );
+  background-size: 200% auto;
+  background-repeat: repeat;
+  animation: rainbowScroll 10s linear infinite;
+}
+
+/* Rainbow text effect */
+.rainbow-text {
+  background: linear-gradient(
+    90deg,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet,
+    red
+  );
+  background-size: 200% auto;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: rainbowScroll 10s linear infinite;
+}
+
+/* Rainbow background effect */
+.rainbow-bg {
+  background: linear-gradient(
+    90deg,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    violet,
+    red
+  );
+  background-size: 200% auto;
+  background-repeat: repeat;
+  color: white;
+  animation: rainbowScroll 10s linear infinite;
+}
