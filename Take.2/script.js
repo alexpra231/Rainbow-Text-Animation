@@ -3,13 +3,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const button = document.getElementById("addPoint");
 
   let score = 0;
-  const threshold = 100;
+  const threshold = 5;
 
   button.addEventListener("click", () => {
     score++;
     scoreText.textContent = `Your Score: ${score}`;
 
-    if (score > threshold) {
+    if (score >= threshold) {
       scoreText.classList.add("rainbow-auto");
     } else {
       scoreText.classList.remove("rainbow-auto");
